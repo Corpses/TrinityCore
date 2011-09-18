@@ -2959,15 +2959,13 @@ void SpellMgr::LoadDbcDataCorrections()
             case 3286:  // Bind
                 spellInfo->EffectImplicitTargetA[0] = TARGET_UNIT_TARGET_ENEMY;
                 spellInfo->EffectImplicitTargetA[1] = TARGET_UNIT_TARGET_ENEMY;
-                break;
-				
+                break;		
 				//Slice and Dice fix
 			case 5171: case 6774: // Slice and Dice
 				spellInfo->AttributesEx3 |= SPELL_ATTR3_NO_INITIAL_AGGRO;
             break;
 				//Slice and Dice fix end
-			
-				case 8494: // Mana Shield (rank 2)
+			case 8494: // Mana Shield (rank 2)
                 // because of bug in dbc
                 spellInfo->procChance = 0;
                 break;
